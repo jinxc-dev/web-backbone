@@ -1,0 +1,23 @@
+<div class="feed_el_wrapper col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+    <div class="feed_el_header col-xs-12">
+        <img src="./images/<%= user.get('profile_image') %>" alt="<%= user.get('user_id') %>" />
+        <a href="#profile/<%= post.get('user_id') %>" class="smth-t"><%= user.get('username') || user.get('user_id') %></a>
+    </div>
+    <% if(post.get('type') == 'video') { %>
+        <div class="feed_el_img col-xs-12 text-center">
+            <video width="400" controls>
+                <source src="./videos/<%= post.get('picture') %>" type="video/ogg">
+                <source src="./videos/<%= post.get('picture') %>" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    <% } else { %>
+        <div class="feed_el_img col-xs-12" style="background-image: url('./images/<%= post.get('picture') %>');" title="<%= post.get('description') %>"></div>
+    <% } %>
+    <div class="feed_el_desc col-xs-12"><%= ' ~ '+post.get('description') %></div>
+    <div class="feed_el_desc col-xs-12 liked_cnt"><%= 'Liked: '+post.get('like_cnt') %></div>
+    <div class="feed_el_reaction col-xs-12">
+        <span title="M'agrada!" class="like_btn glyphicon glyphicon-heart <%= (post.get('liked')==true?'liked':'like') %> smth-t"></span><label></label>
+        <span onclick="alert('show popup to comment (and view comments)')" title="Vull deixar un comentari" class="glyphicon glyphicon-comment comment smth-t"></span>
+    </div>
+</div>

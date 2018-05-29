@@ -1,0 +1,11 @@
+node_modules
+.settings
+.project
+.idea
+*.iml
+public/js/main.min.js
+*.log
+*-lock.json
+*.min.js
+json-server/data/*
+.vscode/*

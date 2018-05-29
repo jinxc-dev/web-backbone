@@ -1,0 +1,46 @@
+<div id="profilebox" style="margin-top:50px" class="mainbox">
+
+
+<div class="col-md-12">
+	<div class="col-md-8"> <!-- lloc on anira la imatge 8 divisions !-->
+		<div class="imgbox">
+			<%= user.get('placeholder') %>
+		</div>
+	</div>
+	
+	<div class="col-md-4"> <!-- lloc on anira la info de la imatge les altres 4 divions restants !-->
+		<div class="foto_userinfo">
+			<div class="col-md-1">
+				<div class="user-minifoto">
+					<%= user.get('placeholder') %>
+				</div>
+			</div>
+			<div class="col-md-1">
+				<div class="user-username">
+					<%= user.get('username') %>
+				</div>
+			</div>
+			<div class="col-md-1">
+				<div class="user-follow">
+					FOLLOW
+				</div>
+			</div>
+			<div class="user-ubicacio">
+				<%= user.get('foto_ubicacio') %>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4"> <!-- foto info !-->
+		<div class="fotoinfo">
+			<%= user.get('foto_bio') %>
+		</div>
+		<div class="loadmorecomments">
+		</div>
+		<div class="comments">
+			<div class="comment"></div>
+		</div>
+		<div class="fotolikes"><%= user.get('foto_likes') %></div>
+	</div>
+</div>
+</div>

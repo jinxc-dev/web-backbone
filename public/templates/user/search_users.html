@@ -1,0 +1,36 @@
+<div style="margin-top: 100px"></div>
+<div class="container">
+  <% _.each(user.get('searchedUsers'), function(user1) { %>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="./images/<%= user1.profile_image %>" class="img-thumbnail" />
+        </div>
+        <div class="col-md-8">
+          <a href="#profile/<%= user1.id%>"><h3><%= user1.username %></h3></a>
+          <p><%= user1.bios %></p>
+        </div>
+        <div class="col-md-2">
+          <h4>Following <%=user1.followingCount %></h4>
+          <h4>Follower <%=user1.followedCount %></h4>
+        </div>
+      </div>
+    </div>
+    
+  <% }) %>
+  
+
+
+</div>
+
+<style>
+  .card {
+    border: 1px solid rgb(151, 151, 151);
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(143, 143, 143);
+    margin: 10px;
+  }
+</style>

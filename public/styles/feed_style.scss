@@ -1,0 +1,60 @@
+.feed-body{
+    margin-top:100px;
+}
+
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.feed_el_wrapper{
+    margin-top: 4rem;
+    padding: 0px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.feed_el_header,.feed_el_desc,.feed_el_reaction{
+    padding: 1rem 2rem;
+    background-color: #aaa;
+}
+
+.feed_el_header>img{
+    border-radius: 50%;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.feed_el_header>a{
+    font-size: 18px;
+    font-family: 'Lobster';
+    color: $p6;
+    text-decoration:none;
+}
+.feed_el_header>a:hover{
+    color: $p2;
+    text-decoration:none;
+}
+
+.feed_el_img{
+    background-color: #aaa;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.feed_el_reaction>.glyphicon{
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.feed_el_reaction>.like:hover,.feed_el_reaction>.liked {
+    color:$p8;
+}
+
+.feed_el_reaction>.comment:hover {
+    color:$p4;
+}

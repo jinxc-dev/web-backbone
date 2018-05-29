@@ -1,0 +1,115 @@
+#footer{
+  .footer1 {
+    .big-focus{
+      position: fixed;
+      bottom: -30vh;
+      right: -30vh;
+      height: 80vh;
+      overflow: hidden;
+      width: 80vh;
+      background-color: $p7;
+      border-radius: 50%;
+      padding: 4rem;
+    }
+    .hided>.banner{
+      visibility: hidden;
+    }
+    .banner{
+      position: absolute;
+      top: 1vh;
+      left: 0;
+      right: 0;
+      text-align: left;
+      font-size: 3vh;
+      transform: rotate(-45deg);
+    }
+    .small-focus{
+      position: fixed;
+      bottom: -7vh;
+      right: -5vh;
+      height: 30vh;
+      overflow: hidden;
+      width: 30vh;
+      background-color: $w;
+      border-radius: 50%;
+      padding: 4rem;
+      z-index: 2;
+    }
+    .glyphicon {
+      font-size: 40px;
+      vertical-align: middle;
+      background-color: $p6;
+      color: $w;
+      padding: 3rem;
+      border-radius: 50%;
+      border: none;
+      z-index: 3;
+    }
+    .glyphicon, .big-focus.hided, .small-focus.hided{
+      position: fixed;
+      bottom: 3vh;
+      right: 2vh;
+      top: unset;
+      height: 100px;
+      width: 100px;
+      margin-right: 2rem;
+    }
+  }
+
+  .footer2 {
+    .big-focus{
+      position: fixed;
+      bottom: -15vh;
+      right: -30vh;
+      height: 80vh;
+      overflow: hidden;
+      width: 80vh;
+      background-color: $p7;
+      border-radius: 50%;
+      padding: 4rem;
+    }
+    .hided>.banner{
+      visibility: hidden;
+    }
+    .banner{
+      position: absolute;
+      top: 1vh;
+      left: 0;
+      right: 0;
+      text-align: left;
+      font-size: 3vh;
+      transform: rotate(-45deg);
+    }
+    .small-focus{
+      position: fixed;
+      bottom: 8vh;
+      right: -5vh;
+      height: 30vh;
+      overflow: hidden;
+      width: 30vh;
+      background-color: $w;
+      border-radius: 50%;
+      padding: 4rem;
+      z-index: 2;
+    }
+    .glyphicon {
+      font-size: 40px;
+      vertical-align: middle;
+      background-color: $p6;
+      color: $w;
+      padding: 3rem;
+      border-radius: 50%;
+      border: none;
+      z-index: 3;
+    }
+    .glyphicon, .big-focus.hided, .small-focus.hided{
+      position: fixed;
+      bottom: 18vh;
+      right: 2vh;
+      top: unset;
+      height: 100px;
+      width: 100px;
+      margin-right: 2rem;
+    }
+  }
+}

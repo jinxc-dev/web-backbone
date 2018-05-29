@@ -1,0 +1,252 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "jo",
+      "email": "anicolau@pew.com",
+      "password": "",
+      "first_name": "Adrià",
+      "last_name": "Nicolau",
+      "date_created": "Fri Mar 16 2018 20:44:41 GMT+0100 (CET)",
+      "date_updated": "2018-05-15T09:22:39.288Z",
+      "bios": "I'm developer at google.",
+      "profile_image": "60224b58-68a1-4c0a-8cab-f27395a79bf8.png"
+    },
+    {
+      "id": 2,
+      "username": "destanyol",
+      "email": "destanyol@pew.com",
+      "password": "destanyol",
+      "first_name": "Daniel",
+      "last_name": "Estañol",
+      "date_created": "Fri Mar 16 2018 20:44:42 GMT+0100 (CET)",
+      "date_updated": "Fri Mar 16 2018 20:44:42 GMT+0100 (CET)",
+      "bios": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, pharetra sed sodales vel, mattis condimentum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce porta risus non urna molestie imperdiet. Donec aliquam tortor sit amet ante ornare faucibus. Mauris accumsan ultricies ante ut imperdiet. Nullam libero ipsum, convallis ut elit et, rutrum consequat arcu. Suspendisse potenti. Nullam viverra mi felis, at dignissim lacus laoreet eget.",
+      "profile_image": "fotoDani.jpeg"
+    },
+    {
+      "id": 3,
+      "username": "pmunyoz",
+      "email": "pmunyoz@pew.com",
+      "password": "pmunyoz",
+      "first_name": "Pau",
+      "last_name": "Munyoz",
+      "date_created": "Fri Mar 16 2018 20:44:43 GMT+0100 (CET)",
+      "date_updated": "Fri Mar 16 2018 20:44:43 GMT+0100 (CET)",
+      "bios": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, pharetra sed sodales vel, mattis condimentum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce porta risus non urna molestie imperdiet. Donec aliquam tortor sit amet ante ornare faucibus. Mauris accumsan ultricies ante ut imperdiet. Nullam libero ipsum, convallis ut elit et, rutrum consequat arcu. Suspendisse potenti. Nullam viverra mi felis, at dignissim lacus laoreet eget.",
+      "profile_image": "fotoPau.jpeg"
+    },
+    {
+      "id": 4,
+      "username": "ebota",
+      "email": "ebota@pew.com",
+      "password": "ebota",
+      "first_name": "Emili",
+      "last_name": "Bota",
+      "date_created": "Fri Mar 16 2018 20:44:44 GMT+0100 (CET)",
+      "date_updated": "Fri Mar 16 2018 20:44:44 GMT+0100 (CET)",
+      "bios": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, pharetra sed sodales vel, mattis condimentum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce porta risus non urna molestie imperdiet. Donec aliquam tortor sit amet ante ornare faucibus. Mauris accumsan ultricies ante ut imperdiet. Nullam libero ipsum, convallis ut elit et, rutrum consequat arcu. Suspendisse potenti. Nullam viverra mi felis, at dignissim lacus laoreet eget.",
+      "profile_image": "fotoEmili.jpeg"
+    }
+  ],
+  "images": [
+    {
+      "filename": "fotoEmili.jpeg",
+      "userId": 4,
+      "id": 1
+    },
+    {
+      "filename": "fotoDani.jpeg",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "filename": "fotoAdri.jpeg",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "filename": "fotoPau.jpeg",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "filename": "hahaxdlol.jpg",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "filename": "3db1039a-76d2-4a6d-8aea-619143aed4eb.jpeg",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "filename": "6ed1960b-d66d-41ee-b233-df241cf01bd5.jpeg",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "filename": "60224b58-68a1-4c0a-8cab-f27395a79bf8.png",
+      "userId": 1,
+      "id": 7
+    }
+  ],
+  "videos": [
+    {
+      "filename": "638ebb67-acbe-4c58-935a-469521aa92cd.ogv",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "filename": "e5de33c3-125e-4e3d-9474-d9da985565b0.ogv",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "filename": "1702e763-b4aa-47ce-8765-d8669bba81f9.mp4",
+      "userId": 1,
+      "id": 3
+    }
+  ],
+  "followings": [
+    {
+      "following_id": 1,
+      "followed_id": 3,
+      "id": 3
+    },
+    {
+      "following_id": 1,
+      "followed_id": 1,
+      "id": 5
+    },
+    {
+      "following_id": 1,
+      "followed_id": 2,
+      "id": 6
+    },
+    {
+      "following_id": 1,
+      "followed_id": 4,
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "user_id": 4,
+      "description": "Foto de l'Emili fent el gamarús",
+      "picture": "fotoEmili.jpeg"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "description": "Foto de l'Adrià fent el passarell",
+      "picture": "fotoAdri.jpeg"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "description": "Foto d'en Pau fent el carallot",
+      "picture": "fotoPau.jpeg"
+    },
+    {
+      "id": 4,
+      "user_id": 3,
+      "description": "Ostres quina cosa més bonica! Em puc casar amb tu?",
+      "picture": "fotoDani.jpeg"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "description": "HA!, GAAAAAAYYYYYYYYYY!!!",
+      "picture": "hahaxdlol.jpg"
+    },
+    {
+      "picture": "3db1039a-76d2-4a6d-8aea-619143aed4eb.jpeg",
+      "description": "beautiful spring",
+      "user_id": 1,
+      "id": 6
+    },
+    {
+      "picture": "638ebb67-acbe-4c58-935a-469521aa92cd.ogv",
+      "description": "test video",
+      "user_id": 1,
+      "type": "video",
+      "id": 7
+    },
+    {
+      "picture": "e5de33c3-125e-4e3d-9474-d9da985565b0.ogv",
+      "description": "this is sample video",
+      "user_id": 1,
+      "type": "video",
+      "id": 8
+    },
+    {
+      "picture": "1702e763-b4aa-47ce-8765-d8669bba81f9.mp4",
+      "description": "",
+      "user_id": 1,
+      "type": "video",
+      "id": 9
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "likes": [
+    {
+      "user_id": 1,
+      "post_id": 4,
+      "id": 4
+    },
+    {
+      "user_id": 1,
+      "post_id": 5,
+      "id": 5
+    },
+    {
+      "user_id": 1,
+      "post_id": 6,
+      "id": 6
+    },
+    {
+      "user_id": 1,
+      "post_id": 2,
+      "id": 8
+    },
+    {
+      "user_id": 1,
+      "post_id": 1,
+      "id": 9
+    },
+    {
+      "user_id": 1,
+      "post_id": 3,
+      "id": 10
+    },
+    {
+      "user_id": 3,
+      "post_id": 2,
+      "id": 12
+    },
+    {
+      "user_id": 3,
+      "post_id": 3,
+      "id": 13
+    },
+    {
+      "user_id": 3,
+      "post_id": 1,
+      "id": 14
+    },
+    {
+      "user_id": 3,
+      "post_id": 7,
+      "id": 15
+    },
+    {
+      "user_id": 3,
+      "post_id": 5,
+      "id": 16
+    }
+  ]
+}

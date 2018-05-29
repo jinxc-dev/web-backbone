@@ -1,0 +1,28 @@
+
+
+
+HOW TO MAKE JSON BACKEND WORK
+
+    Apply new configs
+
+json-server $ npm install
+
+    Run the JSON-Server
+
+json-server $ node server.js
+
+WARNING
+If you are using an IDE it's important to make sure that the working directory of the project in the IDE is the next one:
+
+~/projects/entornsweb/json-server
+
+
+---------------------------------------------------------------
+
+/home/ly0n/webo/instaglike/public/js/views/user/v_profile_edit.js
+
+/home/ly0n/webo/instaglike/public/js/views/user/
+
+/home/ly0n/webo/instaglike/json-server/db.json
+
+/home/ly0n/webo/instaglike/public/templates/user/profile_edit.html

@@ -1,0 +1,60 @@
+<div id="profilebox" class="mainbox">
+	<div class="userInfo">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="lobster">Edit Profile</h3>
+			</div>
+			<div class="col-md-6 col-xs-12 text-center">
+				<div id="user_profile_pic_preview" class="col-xs-12 text-center">
+					<img src="./images/<%= user.get('profile_image') %>" 
+							alt="<%= user.get('first_name')+' '+user.get('last_name') %>"
+							title="<%= user.get('first_name')+' '+user.get('last_name') %>">
+				</div>
+				<div class="col-xs-12 pphotou-wrapper">
+					<input id="select_profile_photo" type="file" name="file" accept="image/*" title="Select a Local Photograph">
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="col-lg-6 col-xs-12 form-group">
+					<label for="ch_first_name">First Name</label>
+					<input type="text" id="ch_first_name" class="form-control" value="<%= user.get('first_name') %>" />
+					<span id="ch_first_name_msg" class="help-block invisible">Introdueix un nom vàlid</span>
+					<br>
+				</div>
+				<div class="col-lg-6 col-xs-12 form-group">
+					<label for="last_name">Last Name</label>
+					<input type="text" id="ch_last_name" class="form-control" value="<%= user.get('last_name') %>" />
+					<span id="ch_last_name_msg" class="help-block invisible">Introdueix un cognom vàlid</span>
+					<br>
+				</div>
+				<div class="col-lg-6 col-xs-12 form-group">
+					<label for="username">User Name</label>
+					<input type="text" id="ch_username" class="form-control" value="<%= user.get('username') %>" />
+					<span id="ch_username_msg" class="help-block invisible">Introdueix un nom d'usuari vàlid</span>
+					<br>
+				</div>
+				<div class="col-lg-6 col-xs-12 form-group">
+					<label for="email">Email</label>
+					<input type="email" id="ch_email" class="form-control" value="<%= user.get('email') %>" />
+					<span id="ch_email_msg" class="help-block invisible">Introdueix una adreça mail vàlida</span>
+					<br>
+				</div>
+				<div class="col-lg-6 col-xs-12 form-group passwd-container">
+					<label for="password">New Password</label>
+					<input type="password" id="ch_password" class="form-control"/>
+					<span id="ch_password_msg" class="help-block invisible">Els passwords no coincideixen</span>
+					<br>
+				</div>
+				<div class="col-lg-6 col-xs-12 form-group passwd-container">
+					<label for="password">Repeat New Password</label>
+					<input type="password" id="ch_password2" class="form-control"/>
+					<span id="ch_password2_msg" class="help-block invisible">Els passwords no coincideixen</span>
+					<br>
+				</div>
+			</div><br><br>
+			<div class="col-md-12 text-center">
+				<button id="save-changes" class="btn btn-success">Save Changes</button>
+			</div>
+		</div>
+	</div>
+</div>

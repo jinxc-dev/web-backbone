@@ -1,0 +1,77 @@
+<div class="user_profile col-xs-12">
+    <div id="user_data col-xs-12">
+        <div id="user_profile_pic" class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <img src="./images/<%= user.get('profile_image') %>" 
+                 alt="<%= user.get('first_name')+' '+user.get('last_name') %>"
+                 title="<%= user.get('first_name')+' '+user.get('last_name') %>">
+        </div>
+        <div id="user_profile_info" class="col-md-8 col-sm-6 col-xs-12">
+            <span id="user_name" class="col-xs-12">
+                <strong><%= user.get('first_name')+' '+user.get('last_name') %></strong> - @<%= user.get('username') %>
+                <% if (me.id != user.get('id') && user.get('followed') == false) { %>
+                    <button id="follow_button" class="float-right">Follow</button>
+                <% } %>
+                <% if (me.id != user.get('id') && user.get('followed') == true) { %>
+                    <button id="unfollow_button" class="float-right">UnFollow</button>
+                <% } %>
+            </span>
+
+            <span id="user_followers" class="text-center col-xs-6" >
+                <strong><%= user.get('followerCount') || 0 %></strong> seguidors
+            </span>
+            <!-- Modal -->
+            <div class="modal fade" id="followerListModal" tabindex="-1" role="dialog" aria-labelledby="followerListModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="followerListModalLabel">Follower List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <% _.each(user.get('followerList'), function(f){ %>
+                            <div><%= f.username %></div>
+                        <% }); %>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <span id="user_following" class="text-center col-xs-6">
+                <strong><%= user.get('followingCount') || 0 %></strong> seguits
+            </span>
+            <!-- Modal -->
+            <div class="modal fade" id="followingModal" tabindex="-1" role="dialog" aria-labelledby="followingModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="followingModalLabel">Following List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <% _.each(user.get('followedList'), function(f){ %>
+                            <div><%= f.username %></div>
+                        <% }); %>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <br>
+            <div id="user_bios"> <%= user.get('bios') %></div>
+            
+        </div>
+    </div>
+    <div id="user_feed" class="text-center col-xs-12">
+        <!--aqui dins renderitzarem el feed-->
+    </div>
+</div>
